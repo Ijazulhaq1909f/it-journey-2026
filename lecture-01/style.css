@@ -113,3 +113,41 @@ footer{
     padding: 20px;
     margin-top: 40px;
 }
+
+/* === EDUCATION === */
+#education ul {
+    list-style: none;
+}
+
+#education li {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#education li:last-child {
+    border-bottom: none;
+}
+
+#education strong {
+    color: #0066cc;
+    font-size: 17px;
+}
+
+/* === EXPERIENCE === */
+#experience ul {
+    list-style: none;
+}
+
+#experience li {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#experience li:last-child {
+    border-bottom: none;
+}
+
+#experience strong {
+    color: #0066cc;
+    font-size: 17px;
+}
