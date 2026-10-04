@@ -1,120 +1,129 @@
-*{
+/* ============================================
+   IJAZ UL HAQ KHAN - PORTFOLIO STYLESHEET
+   Author: Ijaz ul Haq Khan
+   Structure: Mobile-First Responsive Design
+   ============================================ */
+
+
+/* ============================================
+   1. RESET & BASE STYLES
+   ============================================ */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;              /* Mobile base */
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
 }
 
-header{
+
+/* ============================================
+   2. HEADER (Mobile Base)
+   ============================================ */
+
+header {
     background-color: #0066cc;
     color: white;
-    padding: 30px 40px;
+    padding: 25px 15px;
     text-align: center;
 }
 
-header h1{
-    font-size: 36px;
+header h1 {
+    font-size: 26px;
     margin-bottom: 8px;
 }
 
-header p{
-    font-size: 18px;
+header p {
+    font-size: 15px;
     opacity: 0.9;
     margin-bottom: 20px;
 }
 
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+
+/* ============================================
+   3. NAVIGATION (Mobile Base)
+   ============================================ */
+
+nav {
+    width: 100%;
 }
 
-nav a{
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 4px 8px;
+}
+
+nav a {
     color: white;
     text-decoration: none;
     font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    white-space: nowrap;
 }
 
-nav a:hover{
+nav a:hover {
     text-decoration: underline;
 }
 
-main{
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
+
+/* ============================================
+   4. MAIN CONTENT (Mobile Base)
+   ============================================ */
+
+main {
+    padding: 20px 12px;
 }
-section{
+
+section {
     background-color: white;
-    padding: 30px;
-    margin-bottom: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-
-section h2{
+section h2 {
     color: #0066cc;
-    font-size: 26px;
+    font-size: 22px;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid #f0f0f0;
 }
 
-#about img{
+
+/* ============================================
+   5. ABOUT SECTION
+   ============================================ */
+
+#about img {
     border-radius: 50%;
     margin: 0 auto 20px auto;
     display: block;
+    max-width: 150px;
+    width: 100%;
+    height: auto;
 }
 
-#skills ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-#skills li{
-    background-color: #e7f1ff;
-    color: #0066cc;
-    padding: 8px 18px;
-    border-radius: 20px;
-    font-weight: 600;
-}
 
-#contact ul{
-    list-style: none;
-}
+/* ============================================
+   6. EDUCATION SECTION
+   ============================================ */
 
-#contact li{
-    padding: 8px 0;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-#contact a{
-    color: #0066cc;
-    text-decoration: none;
-}
-#contact a:hover{
-    text-decoration: underline;
-}
-
-footer{
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-/* === EDUCATION === */
 #education ul {
     list-style: none;
 }
@@ -130,10 +139,14 @@ footer{
 
 #education strong {
     color: #0066cc;
-    font-size: 17px;
+    font-size: 16px;
 }
 
-/* === EXPERIENCE === */
+
+/* ============================================
+   7. EXPERIENCE SECTION
+   ============================================ */
+
 #experience ul {
     list-style: none;
 }
@@ -149,5 +162,206 @@ footer{
 
 #experience strong {
     color: #0066cc;
-    font-size: 17px;
+    font-size: 16px;
+}
+
+
+/* ============================================
+   8. SKILLS SECTION
+   ============================================ */
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+#skills li {
+    background-color: #e7f1ff;
+    color: #0066cc;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 1.4;
+}
+
+
+/* ============================================
+   9. CONTACT SECTION
+   ============================================ */
+
+#contact ul {
+    list-style: none;
+}
+
+#contact li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#contact a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* ============================================
+   10. FOOTER
+   ============================================ */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* ============================================
+   11. RESPONSIVE - TABLET (768px and up)
+   ============================================ */
+
+@media (min-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 30px 40px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    /* Nav: switch to flex on tablet+ */
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    section {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    #skills li {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+}
+
+
+/* ============================================
+   12. RESPONSIVE - DESKTOP (1024px and up)
+   ============================================ */
+
+@media (min-width: 1024px) {
+
+    header h1 {
+        font-size: 38px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    nav ul {
+        gap: 30px;
+    }
+
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    section {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+}
+
+/* ============================================
+   13. RESPONSIVE - EXTRA SMALL (under 360px)
+   ============================================ */
+
+@media (max-width: 360px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    /* Nav: allow text to break */
+    nav li {
+        margin: 3px 5px;
+    }
+
+    nav a {
+        font-size: 11px;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 19px;
+    }
+
+    /* Skills pills: smaller */
+    #skills li {
+        font-size: 11px;
+        padding: 5px 10px;
+        white-space: normal;
+        word-break: break-word;
+    }
 }
