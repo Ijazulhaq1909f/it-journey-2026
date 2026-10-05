@@ -377,3 +377,115 @@ footer {
         white-space: normal;
     }
 }
+
+/* ============================================
+   14. PROJECTS SECTION
+   ============================================ */
+
+#projects {
+    /* Section already styled hai */
+}
+
+/* Grid container */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;   /* Mobile: 1 column */
+    gap: 20px;
+}
+
+/* Project card */
+.project-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.15);
+}
+
+.project-card h3 {
+    color: #0066cc;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+/* Tags */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.project-tags span {
+    background-color: #e7f1ff;
+    color: #0066cc;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+/* Project link */
+.project-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    align-self: flex-start;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+/* === Tablet: 2 columns === */
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+}
+
+
+/* === Desktop: 3 columns === */
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* === Extra small screens === */
+@media (max-width: 400px) {
+    .project-card {
+        padding: 15px;
+    }
+
+    .project-card h3 {
+        font-size: 16px;
+    }
+
+    .project-card p {
+        font-size: 13px;
+    }
+}
