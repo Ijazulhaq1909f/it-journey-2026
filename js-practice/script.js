@@ -76,3 +76,11 @@ show(a + " + " + b + " = " + (a + b));
 show(a + " - " + b + " = " + (a - b));
 show(a + " × " + b + " = " + (a * b));
 show(a + " ÷ " + b + " = " + (a / b));
+
+
+const firstName = "ijaz ul Haq";
+const lastName = "Khan";
+const fullName = firstName + " " + lastName;
+show(fullName);
+
+
